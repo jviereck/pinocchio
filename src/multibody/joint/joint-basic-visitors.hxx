@@ -105,7 +105,7 @@ namespace se3
   struct JointCalcAbaVisitor : public fusion::JointVisitor<JointCalcAbaVisitor>
   {
     typedef boost::fusion::vector< Inertia::Matrix6 &,
-                                    const bool > ArgsType;
+                                    const bool & > ArgsType;
 
     JOINT_VISITOR_INIT(JointCalcAbaVisitor);
 

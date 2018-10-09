@@ -130,7 +130,7 @@ namespace se3
   {
     typedef boost::fusion::vector<const Eigen::VectorXd &,
     const Eigen::VectorXd &,
-    const double,
+    const double &,
     Eigen::VectorXd &
     > ArgsType;
     
@@ -193,7 +193,7 @@ namespace se3
   template<typename LieGroup_t>
   struct SquaredDistanceStep : public fusion::JointModelVisitor<SquaredDistanceStep<LieGroup_t> >
   {
-    typedef boost::fusion::vector<const JointIndex,
+    typedef boost::fusion::vector<const JointIndex &,
     const Eigen::VectorXd &,
     const Eigen::VectorXd &,
     Eigen::VectorXd &

@@ -150,7 +150,7 @@ namespace se3
   {
     typedef boost::fusion::vector<const se3::Model &,
                                   se3::Data &,
-                                  const bool
+                                  const bool &
                                   > ArgsType;
   
     JOINT_VISITOR_INIT(JacobianCenterOfMassBackwardStep);
